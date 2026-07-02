@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card">
+        <h1>Todo App</h1>
+        <p class="subtitle">Stay focused and track your tasks.</p>
+
+        <div class="input-row">
+          <input id="taskInput" type="text" placeholder="Enter a task" />
+          <button id="addButton" type="button">Add Task</button>
+        </div>
+
+        <div class="filters" role="toolbar" aria-label="Task filters">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="active" type="button">Pending</button>
+          <button class="filter-btn" data-filter="completed" type="button">Completed</button>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+        <p id="emptyState" class="empty-state">No tasks yet. Add one above.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
